@@ -3,11 +3,12 @@ import Swal from "sweetalert2";
 
 let myLastVersionOfObject={};
 let file= null;
+const baseURL="https://malaika-dynasty.onrender.com";
 let secondFile=null;
 let imgUrl=null;
 function loadObject(){
     
-    fetch('http://localhost:8080/MalaiKa/Admin/v1/header/findById/'+1,{
+    fetch(baseURL+'/MalaiKa/Admin/v1/header/findById/'+1,{
         method:'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -49,7 +50,7 @@ function saveHeaderLocalisation(){
 }
 
 function save(object){
-    fetch('http://localhost:8080/MalaiKa/Admin/v1/header/create',{
+    fetch(baseURL+'/MalaiKa/Admin/v1/header/create',{
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -169,7 +170,7 @@ function savePhoto(idHeader, titre,file,context) {
     if (idHeader && titre && file) {
         const formData = new FormData();
         formData.append('file', file);
-      fetch(`http://localhost:8080/MalaiKa/Admin/v1/photo/savePhoto/${idHeader}/${titre}/`+context, {
+      fetch(baseURL+`/MalaiKa/Admin/v1/photo/savePhoto/${idHeader}/${titre}/`+context, {
         method: 'POST',
        
         body: formData
@@ -293,7 +294,7 @@ let myImage=null;
 
 async function imageObjectSave(image) {
     try {
-        const response = await fetch('http://localhost:8080/MalaiKa/Admin/v1/SliderImage/create', {
+        const response = await fetch(baseURL+'/MalaiKa/Admin/v1/SliderImage/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -332,7 +333,7 @@ async function saveImage(){
 }
 
 function saveLikeHibernateSaveMethod(objectName,body){
-    fetch('http://localhost:8080/MalaiKa/Admin/v1/'+objectName+'/create',{
+    fetch(baseURL+'/MalaiKa/Admin/v1/'+objectName+'/create',{
         method:'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -370,7 +371,7 @@ function saveBouttonText(){
 }
 async function saveLikeHibernateSaveMethodWithAsync(objectName,body){
     try {
-        const response = await fetch('http://localhost:8080/MalaiKa/Admin/v1/'+objectName+'/create', {
+        const response = await fetch(baseURL+'/MalaiKa/Admin/v1/'+objectName+'/create', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -418,7 +419,7 @@ let Realisationcollection=[]
 let Objectcollection=[]
 async function findAll(objectName) {
     try {
-        const response = await fetch('http://localhost:8080/MalaiKa/Admin/v1/'+objectName+'/all'); // Remplacez par l'URL réelle
+        const response = await fetch(baseURL+'/MalaiKa/Admin/v1/'+objectName+'/all'); // Remplacez par l'URL réelle
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
@@ -430,7 +431,7 @@ async function findAll(objectName) {
 }
 async function findAllRealisation(objectName) {
     try {
-        const response = await fetch('http://localhost:8080/MalaiKa/Admin/v1/'+objectName+'/all');
+        const response = await fetch(baseURL+'/MalaiKa/Admin/v1/'+objectName+'/all');
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
@@ -457,7 +458,7 @@ async function savePhotoAsync(idHeader, titre, file, context) {
     if (idHeader && titre && file) {
       const formData = new FormData();
       formData.append('file', file);
-      const response = await fetch(`http://localhost:8080/MalaiKa/Admin/v1/photo/savePhoto/${idHeader}/${titre}/${context}`, {
+      const response = await fetch(baseURL+`/MalaiKa/Admin/v1/photo/savePhoto/${idHeader}/${titre}/${context}`, {
         method: 'POST',
         body: formData
       });
