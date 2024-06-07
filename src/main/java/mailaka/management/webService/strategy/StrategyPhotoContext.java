@@ -26,23 +26,23 @@ public class StrategyPhotoContext{
     private void determinContext(String context){
         final String beanName=context+"Strategy";
         switch (context){
-            case "sliderImage":
+            case "imageSlider":
                 strategy= beanFactory.getBean(beanName,SaveImageForSliderPhoto.class);
                 break;
             case "logoImage":
                 strategy= beanFactory.getBean(beanName, SaveLogoPhoto.class);
                 break;
 
-            case "ourServiceImage":
+            case "ourService":
                 strategy= beanFactory.getBean(beanName,SaveOurServicesImagesPhoto.class);
                 break;
-            case "whoWeAreIamgeCard":
+            case "whoweareImageCard":
                 strategy= beanFactory.getBean(beanName,SaveWhoWeAreImageCardPhoto.class);
                 break;
-            case "whoWeAreIamgeArrondi":
+            case "whoweareImageArrondi":
                 strategy= beanFactory.getBean(beanName,SaveWhoWeAreImageArrondiPhoto.class);
                 break;
-            case "realisations":
+            case "realisation":
                 strategy= beanFactory.getBean(beanName,SaveRealisationsPhoto.class);
                 break;
             default:

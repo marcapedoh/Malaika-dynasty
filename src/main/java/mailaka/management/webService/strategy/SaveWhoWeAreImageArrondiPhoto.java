@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service("whoweareImageArrondi")
+@Service("whoweareImageArrondiStrategy")
 @Slf4j
 public class SaveWhoWeAreImageArrondiPhoto implements Strategy<WhoWeAreDAO>{
     private FlickrService flickrService;

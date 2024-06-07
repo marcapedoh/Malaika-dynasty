@@ -13,7 +13,7 @@ import static mailaka.management.webService.constant.Utils.APP_ROOT;
 
 @Api(APP_ROOT+"photo/")
 public interface FlickrAPI {
-    @PostMapping(APP_ROOT+"/photo/savePhoto/{id}/{titre}/{context}")
+    @PostMapping(APP_ROOT+"photo/savePhoto/{id}/{titre}/{context}")
     Object savePhoto(@PathVariable("context") String context, @PathVariable("id") Integer id, @RequestPart("file") MultipartFile photo, @PathVariable("titre") String title) throws IOException, FlickrException;
 
 }

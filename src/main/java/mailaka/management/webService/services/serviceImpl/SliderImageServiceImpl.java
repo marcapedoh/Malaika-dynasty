@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Slf4j
@@ -45,5 +46,12 @@ public class SliderImageServiceImpl implements SliderImageService {
         return sliderImageRepository.findById(id)
                 .map(SliderImageDAO::fromEntity)
                 .orElseThrow(()-> new EntityNotFoundException("aucune inmage n'est stocker avec cette Id chez nous vous vous trompez surement"));
+    }
+
+    @Override
+    public List<SliderImageDAO> findAll() {
+        return sliderImageRepository.findAll().stream()
+                .map(SliderImageDAO::fromEntity)
+                .collect(Collectors.toList());
     }
 }

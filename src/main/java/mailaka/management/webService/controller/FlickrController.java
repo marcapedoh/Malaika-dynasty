@@ -2,7 +2,6 @@ package mailaka.management.webService.controller;
 
 import com.flickr4java.flickr.FlickrException;
 import mailaka.management.webService.controller.API.FlickrAPI;
-import mailaka.management.webService.services.FlickrService;
 import mailaka.management.webService.strategy.StrategyPhotoContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

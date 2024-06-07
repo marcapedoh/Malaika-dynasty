@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @CrossOrigin(origins = "*")
 public class SliderImageController implements SliderImageAPI {
@@ -25,5 +27,10 @@ public class SliderImageController implements SliderImageAPI {
     @Override
     public SliderImageDAO findById(Integer id) {
         return sliderImageService.findById(id);
+    }
+
+    @Override
+    public List<SliderImageDAO> findAll() {
+        return sliderImageService.findAll();
     }
 }

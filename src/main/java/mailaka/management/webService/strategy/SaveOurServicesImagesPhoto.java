@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service("ourServicePhoto")
+@Service("ourServiceStrategy")
 @Slf4j
 public class SaveOurServicesImagesPhoto implements Strategy<OurServiceComponentDAO>{
 

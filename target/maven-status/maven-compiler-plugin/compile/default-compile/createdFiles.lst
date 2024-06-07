@@ -2,6 +2,7 @@ mailaka\management\webService\repository\RealisationsRepository.class
 mailaka\management\webService\WebServiceApplication.class
 mailaka\management\webService\repository\SliderButtonRepository.class
 mailaka\management\webService\models\WhoWeAre$WhoWeAreBuilder.class
+mailaka\management\webService\config\CrossOriginConfiguration.class
 mailaka\management\webService\strategy\Strategy.class
 mailaka\management\webService\DAO\SliderImageDAO$SliderImageDAOBuilder.class
 mailaka\management\webService\strategy\SaveWhoWeAreImageArrondiPhoto.class
@@ -45,6 +46,7 @@ mailaka\management\webService\models\Slider\BouttonElement$BouttonElementBuilder
 mailaka\management\webService\services\serviceImpl\RealisationsServiceImpl.class
 mailaka\management\webService\strategy\SaveOurServicesImagesPhoto.class
 mailaka\management\webService\controller\API\SliderButtonAPI.class
+mailaka\management\webService\handlers\ErrorDAO$ErrorDAOBuilder.class
 mailaka\management\webService\models\Slider\Image.class
 mailaka\management\webService\models\OurServiceComponent$OurServiceComponentBuilder.class
 mailaka\management\webService\models\Realisations$RealisationsBuilder.class
@@ -62,6 +64,7 @@ mailaka\management\webService\repository\ServiceInfoRepository.class
 mailaka\management\webService\services\SliderButtonService.class
 mailaka\management\webService\models\Slider\BouttonElement.class
 mailaka\management\webService\services\SliderImageService.class
+mailaka\management\webService\handlers\ErrorDAO.class
 mailaka\management\webService\DAO\WhoWeAreDAO.class
 mailaka\management\webService\models\footer\ServiceInfo.class
 mailaka\management\webService\DAO\SliderButtonDAO$SliderButtonDAOBuilder.class
@@ -77,6 +80,7 @@ mailaka\management\webService\controller\API\WhoWeAreAPI.class
 mailaka\management\webService\services\serviceImpl\OurServiceServiceImpl.class
 mailaka\management\webService\validators\OurServiceValidator.class
 mailaka\management\webService\controller\RealisationsController.class
+mailaka\management\webService\handlers\RestExceptionHandler.class
 mailaka\management\webService\repository\SliderImageRepository.class
 mailaka\management\webService\services\serviceImpl\HeaderServiceImpl.class
 mailaka\management\webService\validators\SliderImageValidator.class

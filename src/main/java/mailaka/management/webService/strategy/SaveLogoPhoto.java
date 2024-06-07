@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service("headerStrategy")
+@Service("logoImageStrategy")
 @Slf4j
 public class SaveLogoPhoto implements Strategy<HeaderDAO> {
 

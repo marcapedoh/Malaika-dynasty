@@ -13,7 +13,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service("imageSliderPhoto")
+@Service("imageSliderStrategy")
 @Slf4j
 public class SaveImageForSliderPhoto implements Strategy<SliderImageDAO>{
 

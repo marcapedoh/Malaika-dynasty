@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.util.List;
+
 import static mailaka.management.webService.constant.Utils.APP_ROOT;
 
 
@@ -30,4 +32,10 @@ public interface SliderImageAPI {
             @ApiResponse(code=404,message = "aucun  sliderImage trouvé dans la base de donnée")
     })
     SliderImageDAO findById(@PathVariable("id") Integer id);
+    @GetMapping(value = APP_ROOT+"SliderImage/all",produces = MediaType.APPLICATION_JSON_VALUE)
+    @ApiOperation(value = "Renvoi la liste des Images", notes=" cette methode permet de rechercher un Image avec tous ses attributs",responseContainer = "List<SliderImageDAO>")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200,message = "liste des SliderImage/liste vide")
+    })
+    List<SliderImageDAO> findAll();
 }

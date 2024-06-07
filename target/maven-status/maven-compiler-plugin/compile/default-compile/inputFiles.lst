@@ -1,3 +1,4 @@
+D:\webService\webService\src\main\java\mailaka\management\webService\config\CrossOriginConfiguration.java
 D:\webService\webService\src\main\java\mailaka\management\webService\config\swaggerConfig.java
 D:\webService\webService\src\main\java\mailaka\management\webService\constant\Utils.java
 D:\webService\webService\src\main\java\mailaka\management\webService\controller\API\FlickrAPI.java
@@ -27,6 +28,8 @@ D:\webService\webService\src\main\java\mailaka\management\webService\exception\E
 D:\webService\webService\src\main\java\mailaka\management\webService\exception\ErrorCodes.java
 D:\webService\webService\src\main\java\mailaka\management\webService\exception\InvalidEntityException.java
 D:\webService\webService\src\main\java\mailaka\management\webService\exception\InvalidOperationException.java
+D:\webService\webService\src\main\java\mailaka\management\webService\handlers\ErrorDAO.java
+D:\webService\webService\src\main\java\mailaka\management\webService\handlers\RestExceptionHandler.java
 D:\webService\webService\src\main\java\mailaka\management\webService\models\AbstractEntity.java
 D:\webService\webService\src\main\java\mailaka\management\webService\models\footer\ServiceInfo.java
 D:\webService\webService\src\main\java\mailaka\management\webService\models\Header.java

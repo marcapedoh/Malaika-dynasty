@@ -15,7 +15,7 @@ public class Realisations extends  AbstractEntity{
     private String titre;
     @Column(name = "contenuRealisation",nullable = false)
     private String contenu;
-    @Column(name = "imagePath",nullable = false)
+    @Column(name = "imagePath",nullable = true)
     private String imagePath;
     @Column(name = "nomSection",nullable = false)
     private String nomSection;

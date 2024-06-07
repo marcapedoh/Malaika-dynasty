@@ -23,7 +23,7 @@ public interface SliderButtonAPI {
             @ApiResponse(code = 200,message = "l'object SliderButton a ete bien crée ou modifer")
     })
     SliderButtonDAO save(@RequestBody SliderButtonDAO sliderButtonDAO);
-    @GetMapping(value = APP_ROOT+"sliderButton/findById/{id}",produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = APP_ROOT+"SliderButton/findById/{id}",produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "Rechercher un header", notes=" cette methode permet de rechercher un header par son ID",response = SliderButtonDAO.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200,message = "le sliderButton a ete trouvé dans la base de donnée"),

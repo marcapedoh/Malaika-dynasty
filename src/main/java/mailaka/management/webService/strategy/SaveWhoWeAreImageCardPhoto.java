@@ -13,7 +13,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service("whoweareImageCard")
+@Service("whoweareImageCardStrategy")
 @Slf4j
 public class SaveWhoWeAreImageCardPhoto implements Strategy<WhoWeAreDAO>{
     private FlickrService flickrService;

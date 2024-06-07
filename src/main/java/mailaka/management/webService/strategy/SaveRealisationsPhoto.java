@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.InputStream;
 
-@Service
+@Service("realisationStrategy")
 @Slf4j
 public class SaveRealisationsPhoto implements Strategy<RealisationsDAO>{
     private final RealisationsService realisationsService;
