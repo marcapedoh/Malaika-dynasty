@@ -1,7 +1,7 @@
 export default {
     build: {
       rollupOptions: {
-        external: ['main.js']
+        external: ['./main.js']
       }
     }
   }
